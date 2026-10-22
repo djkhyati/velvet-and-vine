@@ -1,0 +1,152 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  color: #111;
+}
+
+.app{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Navbar*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  border-bottom: 1px solid #eaeaea;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo{
+  font-size: 1.25rem;
+  fornt-weight: 700;
+  letter-spacing: 2px;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover{
+  color: #000;
+}
+
+/*Hero Section*/
+
+.hero{
+  text-align: center;
+  padding: 5rem 1rem;
+  background: #fff;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.hero h1{
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.hero p{
+  color: #666;
+  font-size: 1rem;
+}
+
+/*Products Section*/
+
+.product-container h2{
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.loading{
+  text-align: center;
+  color: #666;
+}
+
+.grid{
+  diasplay: grid;
+  grid-template-columns: repeat(auto-fit, minmax(2560px, 1fr));
+  gap: 2rem;
+}
+
+.product-card{
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  transition: transform 0.2s;
+}
+
+.image-wrapper{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .image-wrapper img{
+  transform: scale(1.03);
+}
+
+.product-info{
+  padding: 1rem 0;
+}
+.product-info h3{
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.category{
+  font-size: 0.8rem;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.price{
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.add-btn{
+  width: 100%;
+  padding: 0.752rem;
+  background: #111;
+  color: #fff;
+  border: none;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s;
+
+}
+
+.add-btn:hover{
+  background: #333;
+}
